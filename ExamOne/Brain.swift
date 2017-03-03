@@ -24,7 +24,7 @@ class Brain {
     private let operations:Dictionary<String,OperationTypes> = [
         "π" : .Constant(M_PI),
         "e" : .Constant(M_E),
-        // TODO: A a reference to the Factorial function here
+        // TODO: A reference to the Factorial function here
         "√" : .UnaryOperator(sqrt),
         "±" : .UnaryOperator({$0 != 0 ? -$0 : 0.0}),
         "+" : .BinaryOperator({$0+$1}),
